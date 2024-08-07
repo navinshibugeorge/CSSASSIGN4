@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    background-color: orangered;
+    height: 100px;
+    text-align: center;
+    color: beige;
+    padding: 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: bisque;
+    font-size:large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color ease-in-out .2s;
+}
+nav ul li a:hover{
+    color: black;
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: gray;
+    text-align: center;
+    list-style: none;  
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    width: 100%;
+    gap: 1rem;
+    padding: 20px;
+    background-color: beige;
+}
+.product img{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+.btn{
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: black;
+}
+.price{
+    color: brown;
+}
